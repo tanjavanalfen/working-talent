@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Opdracht 3: Hoe vaak er een E in?</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+        function lettersTellen(){
+            var woord = document.getElementById("input1").value;
+            var letter = document.getElementById("input2").value;
+            
+            // Geef letter een default waarde wanneer er niets wordt ingevoerd
+            if (letter === "")
+                letter = "e";
+
+            // Check of de letter er in zit (zo niet, dan doen we niets)
+            if (woord.includes(letter)){
+                // Tel het aantal van de gegeven letter in het gegeven woord
+                var teller = 0;
+                for (var i=0; i<woord.length; ++i)
+                    if (woord.charAt(i) === letter)
+                        teller++;
+                // Stuur een alert met de hoeveelheid van de letter
+                alert("Er zit(ten) " + teller + " " + letter.toUpperCase() + "('s) in!")
+            }
+        }
+    </script>
+</head>
+<body>
+    <input id="input1">
+    <input id="input2">
+    <button onclick="lettersTellen()">Een knop!</button>
+</body>
+</html>
