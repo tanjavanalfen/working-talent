@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Opdracht 7: Zijn de afbeeldingen hetzelfde?</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+        const afbeeldingen = ['lente', 'zomer', 'herfst', 'winter'];
+        const counter = {AFBA:0, AFBB:0};
+
+        function veranderAfbeelding(afbeeldingID){
+            // Check welk seizoen we zijn
+            var seizoen = counter[afbeeldingID] % afbeeldingen.length;
+
+            // Laat het bijbehorende plaatje zien
+            document.getElementById(afbeeldingID).src="images/" + afbeeldingen[seizoen] + ".jpg";
+
+            counter[afbeeldingID]++;
+        }
+
+        function logGelijkheid(){
+            // Check welk seizoen de beide afbeeldingen zijn
+            var seizoenA = counter["AFBA"] % afbeeldingen.length;
+            var seizoenB = counter["AFBB"] % afbeeldingen.length;
+
+            // Check gelijkheid van de afbeeldingen
+            if (seizoenA === seizoenB)
+                gelijkheid = "HETZELFDE";
+            else
+                gelijkheid = "NIET HETZELFDE";
+            // Update div met gelijkheidswaarde
+            document.getElementById("gelijkheid").innerHTML=gelijkheid;
+        }
+    </script>
+</head>
+<body>
+    <button onclick="veranderAfbeelding('AFBA')">KNA</button>
+    <button onclick="veranderAfbeelding('AFBB')">KNB</button>
+    <button onclick="logGelijkheid()">KNC</button>
+    <p>
+        <img id="AFBA" style="width:500px"> 
+        <img id="AFBB" style="width:500px">
+    </p>
+    <p><div id="gelijkheid"></div></p>
+</body>
+</html>
