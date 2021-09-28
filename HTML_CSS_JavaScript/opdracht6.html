@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Opdracht 6: Vier seizoenen, vier afbeeldingen!</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+        const afbeeldingen = ['lente', 'zomer', 'herfst', 'winter'];
+        var counter = 0;
+
+        function veranderAfbeelding(){
+            // Check welk seizoen we zijn
+            var seizoen = counter % afbeeldingen.length;
+
+            // Laat het bijbehorende plaatje zien
+            document.getElementById('afbeelding').src = "images/" + afbeeldingen[seizoen] + ".jpg";
+
+            // Update de jaarteller div
+            var jaar = Math.floor(counter / 4); 
+            document.getElementById("jaartelling").innerHTML=
+            "Er zijn " + jaar + " jaren voorbij.";
+
+            counter++;
+        }
+    </script>
+</head>
+<body>
+    <button onclick="veranderAfbeelding()">Een knop!</button>
+    <p><img id="afbeelding" style="width:500px"></p>
+    <p><div id="jaartelling"></div></p>
+</body>
+</html>
