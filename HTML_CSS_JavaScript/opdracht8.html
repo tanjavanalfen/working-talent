@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Opracht 8: De lente begint!</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+        const afbeeldingen = ['lente', 'zomer', 'herfst', 'winter'];
+        var counter = 0;
+
+        function veranderAfbeelding() {
+            // Check welk seizoen we zijn
+            var seizoen = counter % afbeeldingen.length;
+
+            // Laat het bijbehorende plaatje zien
+            document.getElementById('AFBA').src = "images/" + afbeeldingen[seizoen] + ".jpg";
+
+            // Als lente: maak plaatje met lammetjes zichtbaar
+            if (afbeeldingen[seizoen] === "lente")
+                document.getElementById("AFBB").style.display = 'inline';
+            else
+                document.getElementById("AFBB").style.display = 'none';
+
+            counter++;
+        }
+    </script>
+</head>
+<body>
+    <img id="AFBA" src="images/lente.jpg" onclick="veranderAfbeelding()" style="width:500px">
+    <img id="AFBB" src="images/lammetjes.png" style="width:500px">
+</body>
+</html>
