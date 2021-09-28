@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Opdracht 4: Op welke knoppen is er eigenlijk geklikt?</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+        function knopKlik(knop){
+            // Laat een tekst zien welke knop geklikt is
+            document.getElementById("output").innerHTML+=
+            "U heeft op knop " + knop + " geklikt.<br>";
+        }
+    </script>
+</head>
+<body>
+    <button onclick="knopKlik('A')">A</button>
+    <button onclick="knopKlik('B')">B</button>
+    <button onclick="knopKlik('C')">C</button>
+    <button onclick="knopKlik('D')">D</button>   
+    <div id="output"></div> <!-- Output om tekst in te plaatsen -->
+</body>
+</html>
