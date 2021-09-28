@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Opdracht 5: Op iedere knop mag maar 1 keer geklikt worden!</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+        // Counter object to keep track of the number of clicks
+        const counter = {A:0, B:0, C:0, D:0};
+        function knopKlik(knop){
+            // Check if button has been clicked yet
+            if (counter[knop] > 0)
+                alert("U heeft al " + counter[knop] + " keer op " + knop + " geklikt.");
+
+            // Laat een tekst zien welke knop geklikt is
+            document.getElementById("output").innerHTML+=
+            "U heeft op knop " + knop + " geklikt.<br>";
+            counter[knop]++;
+        }
+    </script>
+</head>
+<body>
+    <button onclick="knopKlik('A')">A</button>
+    <button onclick="knopKlik('B')">B</button>
+    <button onclick="knopKlik('C')">C</button>
+    <button onclick="knopKlik('D')">D</button>   
+    <div id="output"></div>
+</body>
+</html>
