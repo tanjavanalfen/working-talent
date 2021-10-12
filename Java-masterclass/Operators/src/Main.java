@@ -35,9 +35,45 @@ public class Main {
 			System.out.println("It is not an alien!");
 			System.out.println("And I am scared of aliens");  // Outside of if-codeblock, so executed regardless
 			
-		if (isAlien == false) {
+		if (isAlien == false) {  // with codeblock, it's within the if-statement
 			System.out.println("It is not an alien!");
-			System.out.println("And I am scared of aliens");  // Outside of if-codeblock, so executed regardless
+			System.out.println("And I am scared of aliens");
+		}
+		
+		int topScore = 80;
+		if (topScore != 100) {  // ==, != >, >=, <, <=
+			System.out.println("You got the high score!");
+		}
+		int secondTopScore = 60;
+		if ((topScore > secondTopScore) && (topScore < 100)) {  // logical AND operator: both must be true
+			System.out.println("Greater than second top score and less than 100");
+		}
+		
+		
+		if ((topScore > 90) || (secondTopScore <= 90)) {  // logical OR operator: one of both must be true
+			System.out.println("Either of both of the conditions are true");  // only right operator is true
+		}
+		
+		
+		int newValue = 50;
+//		if (newValue = 50) {  // assigns 50 to newValue, can't check truth value of int
+//			System.out.println("This is an error");
+//		}
+		if (newValue == 50) {
+			System.out.println("This is true");
+		}
+		boolean isCar = false;
+//		if (isCar = true) {  // evaluates to true, so can be compiled
+//			System.out.println("This is not supposed to happen");
+//		}
+		if (!isCar) {  // NOT isCar (or isCar == false) 
+			System.out.println("This is supposed to happen");
+		}
+		
+		isCar = true;
+		boolean wasCar = isCar ? true : false;  // (condition) ? (value if true) : (value if false)
+		if (wasCar) {
+			System.out.println("wasCar is true");
 		}
 
 	}
