@@ -20,6 +20,14 @@ public class Main {
 		
 		result = result % 3;  // remainder of (4 / 3) = 1
 		System.out.println("4 % 3 = " + result);
+		
+		
+		result++;		// equal to result = result + 1;
+		result--;  		
+		result += 2;  	
+		result -= 2;	
+		result *= 10;	
+		result /= 3;  	
 
 	}
 
