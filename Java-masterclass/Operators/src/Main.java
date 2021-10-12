@@ -28,6 +28,17 @@ public class Main {
 		result -= 2;	
 		result *= 10;	
 		result /= 3;  	
+		
+		
+		boolean isAlien = false;
+		if (isAlien == true)
+			System.out.println("It is not an alien!");
+			System.out.println("And I am scared of aliens");  // Outside of if-codeblock, so executed regardless
+			
+		if (isAlien == false) {
+			System.out.println("It is not an alien!");
+			System.out.println("And I am scared of aliens");  // Outside of if-codeblock, so executed regardless
+		}
 
 	}
 
