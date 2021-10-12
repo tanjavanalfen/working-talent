@@ -75,6 +75,23 @@ public class Main {
 		if (wasCar) {
 			System.out.println("wasCar is true");
 		}
+		
+		
+		// Summary of operators via docs.oracle.com
+		
+		// Operator precedence table
+		
+		
+		// Challenge
+		double doubleVariable = 20.00;
+		double secondDouble = 80.00;
+		double multipliedSum = (doubleVariable + secondDouble) * 100.00;
+		double remainder = multipliedSum % 40.00;
+		boolean isZero = remainder == 0;
+		System.out.println("isZero = " + isZero);
+		
+		if (!isZero)
+			System.out.println("Got some remainder");
 
 	}
 
