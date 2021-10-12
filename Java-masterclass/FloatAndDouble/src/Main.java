@@ -24,7 +24,21 @@ public class Main {
 		System.out.println("MyIntValue = " + myIntValue);
 		System.out.println("MyFloatValue = " + myFloatValue);  // includes decimal .0
 		System.out.println("MyDoubleValue = " + myDoubleValue);  // includes decimal .0
-
+		
+		
+		// Challenge
+		double pounds = 200;
+		double kilograms = 0.45359237 * pounds;
+		System.out.println(pounds + " pounds is " + kilograms + " kilograms");
+		
+		double pi = 3.1415927d;
+		double anotherNumber = 3_000_000.4_567_890d;  // displays as 3000000.456789
+		System.out.println(pi);
+		System.out.println(anotherNumber);
+		
+		
+		// float and double are not suitable for precise calculations. Use BigDecimal instead.
+		
 	}
 
 }
