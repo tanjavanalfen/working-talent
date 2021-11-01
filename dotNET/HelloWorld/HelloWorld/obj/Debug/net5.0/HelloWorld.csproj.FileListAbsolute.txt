@@ -1,0 +1,16 @@
+D:\Documents\Documents\working-talent\dotNET\HelloWorld\HelloWorld\bin\Debug\net5.0\HelloWorld.exe
+D:\Documents\Documents\working-talent\dotNET\HelloWorld\HelloWorld\bin\Debug\net5.0\HelloWorld.deps.json
+D:\Documents\Documents\working-talent\dotNET\HelloWorld\HelloWorld\bin\Debug\net5.0\HelloWorld.runtimeconfig.json
+D:\Documents\Documents\working-talent\dotNET\HelloWorld\HelloWorld\bin\Debug\net5.0\HelloWorld.runtimeconfig.dev.json
+D:\Documents\Documents\working-talent\dotNET\HelloWorld\HelloWorld\bin\Debug\net5.0\HelloWorld.dll
+D:\Documents\Documents\working-talent\dotNET\HelloWorld\HelloWorld\bin\Debug\net5.0\ref\HelloWorld.dll
+D:\Documents\Documents\working-talent\dotNET\HelloWorld\HelloWorld\bin\Debug\net5.0\HelloWorld.pdb
+D:\Documents\Documents\working-talent\dotNET\HelloWorld\HelloWorld\obj\Debug\net5.0\HelloWorld.csproj.AssemblyReference.cache
+D:\Documents\Documents\working-talent\dotNET\HelloWorld\HelloWorld\obj\Debug\net5.0\HelloWorld.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\Documents\working-talent\dotNET\HelloWorld\HelloWorld\obj\Debug\net5.0\HelloWorld.AssemblyInfoInputs.cache
+D:\Documents\Documents\working-talent\dotNET\HelloWorld\HelloWorld\obj\Debug\net5.0\HelloWorld.AssemblyInfo.cs
+D:\Documents\Documents\working-talent\dotNET\HelloWorld\HelloWorld\obj\Debug\net5.0\HelloWorld.csproj.CoreCompileInputs.cache
+D:\Documents\Documents\working-talent\dotNET\HelloWorld\HelloWorld\obj\Debug\net5.0\HelloWorld.dll
+D:\Documents\Documents\working-talent\dotNET\HelloWorld\HelloWorld\obj\Debug\net5.0\ref\HelloWorld.dll
+D:\Documents\Documents\working-talent\dotNET\HelloWorld\HelloWorld\obj\Debug\net5.0\HelloWorld.pdb
+D:\Documents\Documents\working-talent\dotNET\HelloWorld\HelloWorld\obj\Debug\net5.0\HelloWorld.genruntimeconfig.cache
